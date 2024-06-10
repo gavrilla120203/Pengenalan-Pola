@@ -1,1 +1,3 @@
 # Pengenalan-Pola
+
+Pembagian tugas
