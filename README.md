@@ -6,7 +6,7 @@ Proyek ini bertujuan untuk mengembangkan sistem klasifikasi penyakit pada tumbuh
 
 ## Pembagian Tugas
 
-### Gavrilla Claudia
+### Gavrilla Claudia (21110004)  
 1. **Pengumpulan Data**
    - Mengumpulkan dataset gambar daun durian dari website roboflow.
    - Membagi dataset dalam 4 kelas yakni Alga Leaf Spot, No Disease,
@@ -23,7 +23,7 @@ Proyek ini bertujuan untuk mengembangkan sistem klasifikasi penyakit pada tumbuh
 3. **Dokumentasi**
    - Menyusun README.md dengan penjelasan lengkap mengenai proyek ini.
 
-### Nifelling Rosmelia Sandewa
+### Nifelling Rosmelia Sandewa (21110014)  
 1. **Model Training**
    - Memilih arsitektur model CNN yang sesuai untuk klasifikasi penyakit
      tumbuham durian seperti Model CNN (4 Layer Conv2D, (16, 32, 64,
