@@ -1,56 +1,41 @@
-# Deteksi Penyakit pada Tumbuhan Durian
+# Klasifikasi Penyakit pada Tumbuhan Durian Menggunakan Metode Convolutional Neural Network (CNN) 
 
 ![Untitled](https://github.com/gavrilla120203/Pengenalan-Pola/assets/130575657/082d2ca0-284b-4a2d-8bfb-c2f882a9ea20)
 
-
-Proyek ini bertujuan untuk mengembangkan sistem deteksi penyakit pada tumbuhan durian menggunakan teknik pengenalan pola. Proyek ini dibagi menjadi beberapa tahap mulai dari preprocessing data hingga evaluasi akhir. Terdapat dua anggota dalam tim ini, yaitu Villa dan Nifelling, dengan pembagian tugas sebagai berikut:
+Proyek ini bertujuan untuk mengembangkan sistem klasifikasi penyakit pada tumbuhan durian menggunakan metode Convolutional Neural Network (CNN). Proyek ini dibagi menjadi beberapa tahap mulai dari pengumpulan dataset hingga dokumentasi di github. Proyek ini dikerjakan oleh Gavrilla Claudia (21110004) dan Nifelling Rosmelia Sandewa (21110014), dengan pembagian tugas sebagai berikut : 
 
 ## Pembagian Tugas
 
-### Villa
+### Gavrilla Claudia
 1. **Pengumpulan Data**
-   - Mengumpulkan dataset gambar daun durian dari berbagai sumber.
-   - Menyusun dataset dengan label yang sesuai.
+   - Mengumpulkan dataset gambar daun durian dari website roboflow.
+   - Membagi dataset dalam 4 kelas yakni Alga Leaf Spot, No Disease,
+     Leaf Blight, dan Leaf Spot. 
 
 2. **Preprocessing Data**
-   - Membersihkan data dan menghapus noise pada gambar.
-   - Melakukan augmentasi data untuk meningkatkan variasi dataset.
-   - Mengubah format gambar jika diperlukan.
+   - Membagi dataset menjadi 201 data pelatihan, 100 data pengujian, dan
+     119 data validasi. 
+   - Menampilkan distribusi pada setiap folder (train, test,
+     validation).  
+   - Melakukan augmentasi data untuk meningkatkan variasi dataset
+     menggunakan pipeline augmentor. 
 
-3. **Feature Extraction**
-   - Menggunakan teknik-teknik ekstraksi fitur untuk mendapatkan fitur-fitur penting dari gambar.
-   - Implementasi metode ekstraksi fitur seperti Histogram of Oriented Gradients (HOG) atau metode lainnya yang relevan.
-
-### Nifelling
-1. **Model Training**
-   - Memilih arsitektur model yang sesuai untuk deteksi penyakit.
-   - Melakukan training model dengan dataset yang telah dipreproses.
-   - Mengoptimalkan hyperparameter model.
-
-2. **Model Evaluation**
-   - Mengevaluasi performa model menggunakan metrik-metrik evaluasi yang relevan seperti akurasi, precision, recall, dan F1-score.
-   - Membuat laporan hasil evaluasi model.
-
-3. **Deployment dan Dokumentasi**
-   - Menyiapkan model untuk di-deploy dalam lingkungan produksi.
-   - Menulis dokumentasi teknis dan panduan penggunaan sistem deteksi penyakit.
+3. **Dokumentasi**
    - Menyusun README.md dengan penjelasan lengkap mengenai proyek ini.
 
-## Alur Kerja Proyek
+### Nifelling Rosmelia Sandewa
+1. **Model Training**
+   - Memilih arsitektur model CNN yang sesuai untuk klasifikasi penyakit
+     tumbuham durian seperti Model CNN (4 Layer Conv2D, (16, 32, 64,
+     64), Dense=128, lr=0.0001). 
+   - Melakukan training model dengan dataset yang telah dipreproses dan
+     di-augmentasi.
+   - Mengoptimalkan hyperparameter model.
 
-1. **Pengumpulan Data:** Villa akan bertanggung jawab dalam mencari dan mengumpulkan data gambar daun durian dari berbagai sumber.
-2. **Preprocessing Data:** Villa akan membersihkan dan mempersiapkan data untuk tahap selanjutnya.
-3. **Feature Extraction:** Villa akan melakukan ekstraksi fitur dari data gambar.
-4. **Model Training:** Nifelling akan melatih model dengan dataset yang telah dipreproses.
-5. **Model Evaluation:** Nifelling akan mengevaluasi performa model dan membuat laporan hasil evaluasi.
-6. **Deployment dan Dokumentasi:** Nifelling akan menyiapkan model untuk deployment dan menyusun dokumentasi lengkap proyek ini.
-
-Kami berharap proyek ini dapat memberikan kontribusi positif dalam bidang pertanian, khususnya dalam mendeteksi penyakit pada tumbuhan durian secara lebih efektif dan efisien.
-
-## Kontak
-
-Jika Anda memiliki pertanyaan atau ingin berdiskusi lebih lanjut mengenai proyek ini, silakan hubungi kami melalui GitHub.
-
----
-
-Dengan pembagian tugas yang jelas, diharapkan proyek ini dapat diselesaikan dengan baik dan tepat waktu. Terima kasih atas perhatian dan dukungannya!
+2. **Vakidation and Model Evaluation**
+   - Pengujian model menggunakan data validasi atau data uji yang terpisah dari
+     data pelatihan untuk mengukur akurasi, loss, val_accuracy, dan val_loss.
+     
+3. **Optimisasi Model**
+   - Setelah evaluasi, perlu dilakukan optimisasi model untuk meningkatkan kinerja
+     atau efisiensi model seperti hyperparameter.    
